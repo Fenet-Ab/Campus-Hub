@@ -1,0 +1,16 @@
+/* .sign-in-btn {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #6366f1 0%, #6366f1 100%);
+  border: none;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(165, 180, 252, 0.15);
+  transition: transform 0.15s, box-shadow 0.15s,;
+}
+
+.sign-in-btn:hover {
+  background: linear-gradient(90deg, #6366f1 0%, #a5b4fc 100%);
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.2);
+} */

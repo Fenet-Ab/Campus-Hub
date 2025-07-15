@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.header{
+    text-align: center;
+    margin-top: 80px;
+    font-weight: 700;
+    font-size: 2rem;
+}
