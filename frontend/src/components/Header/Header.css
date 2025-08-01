@@ -1,9 +1,9 @@
 .header-bg-responsive {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 450px;
   min-width: 100vw;
-  min-height: 100vh;
+  min-height: 450px;
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
@@ -31,12 +31,8 @@
 @media (max-width: 780px) {
   .header-bg-responsive {
     background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    min-width: 100vw;
-    min-height: 100vh;
-    background-color: #111; /* Optional: fallback color */
+   
+  
+
   }
 }

@@ -1,10 +1,9 @@
-import { useState } from 'react'
+
 import {Route,Routes} from 'react-router-dom'
-import Navbar from "./components/Navbar/Navbar.jsx";
-import Header from "./components/Header/Header.jsx";
-import Content from './components/Content/Content.jsx'
-import Home from './pages/Home/Home'
-import About from './pages/About/About.jsx'
+import Navbar from "./components/Navbar/Navbar.tsx";
+
+import Home from './pages/Home/Home.tsx'
+import About from './pages/About/About.tsx'
 
 
 

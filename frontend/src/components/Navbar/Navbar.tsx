@@ -1,4 +1,4 @@
-// src/components/Navbar.jsx
+// src/components/Navbar.tsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -6,21 +6,22 @@ import logo from "../../assets/logo.png";
 import bell from "../../assets/bell.png";
 import './Navbar.css';
 
-// TypeScript ignore for JSX import
-// @ts-nocheck
+interface NavLink {
+  label: string | React.ReactElement;
+  to: string;
+}
 
-const links = [
+const links: NavLink[] = [
   { label: "Home", to: "/" },
   { label: "Forum", to: "/forum" },
   { label: "Events", to: "/events" },
   { label: "About", to: "/about" },
   { label: "Marketplace", to: "/marketplace" },
- 
   { label: <img src={bell} alt="Notifications" className="h-6 w-6 inline ml-10" />, to: "/notification" }
 ];
 
-export default function Navbar() {
-  const [open, setOpen] = useState(false);
+const Navbar: React.FC = () => {
+  const [open, setOpen] = useState<boolean>(false);
 
   return (
     <nav className="fixed inset-x-0 top-0 z-50 bg-white shadow" id="header">
@@ -66,7 +67,7 @@ export default function Navbar() {
         <div className="space-y-1 bg-white px-4 pb-4 md:hidden">
           <ul className="space-y-1">
             {links.map(({ to, label }) => (
-              <li key={label}>
+              <li key={typeof label === "string" ? label : to}>
                 <Link
                   to={to}
                   onClick={() => setOpen(false)}
@@ -83,4 +84,6 @@ export default function Navbar() {
       )}
     </nav>
   );
-}
+};
+
+export default Navbar; 

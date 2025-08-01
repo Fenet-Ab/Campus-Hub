@@ -1,9 +1,9 @@
-import React from 'react'
-import './Home.css'
-import Header  from '../../components/Header/Header.jsx'
-import Card from '../../components/Card/Card.jsx'
+import React from 'react';
+import './Home.css';
+import Header from '../../components/Header/Header.tsx';
+import Card from '../../components/Card/Card.tsx';
 
-const Home = () => {
+const Home: React.FC = () => {
     return (
         <div>
             <Header />
@@ -38,7 +38,7 @@ const Home = () => {
             
 
         </div>
-    )
-}
+    );
+};
 
-export default Home
+export default Home; 
