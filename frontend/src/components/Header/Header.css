@@ -1,9 +1,9 @@
 .header-bg-responsive {
   position: relative;
   width: 100vw;
-  height: 450px;
+  height: 100vh;
   min-width: 100vw;
-  min-height: 450px;
+  min-height: 100vh;
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;

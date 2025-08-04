@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar/Navbar.tsx";
 
 import Home from './pages/Home/Home.tsx'
 import About from './pages/About/About.tsx'
+import Footer from './components/Footer/Footer.tsx';
+import Forem from './pages/Forem/Forem.tsx'
 
 
 
@@ -18,7 +20,11 @@ function App() {
          <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
+        <Route path='/forum'element={<Forem/>}/>
+
        </Routes>
+       <Footer/>
+      
       
 
       </div>
